@@ -14,7 +14,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ## Overview
 
-Basic Rating Component built with React using React Hooks, Styled Components with Global Styles.
+Interactive Rating Component built with React using React Hooks, Styled Components with Global Styles.
 
 ### Screenshot
 
@@ -32,7 +32,7 @@ Basic Rating Component built with React using React Hooks, Styled Components wit
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - React Hooks (useState, useNavigate, useContext)
-- [Styled Components](https://styled-components.com/) - For styles CSS in JS
+- [Styled Components](https://styled-components.com/) - For styles (CSS in JS)
 - Global Styles
 
 ## Author
