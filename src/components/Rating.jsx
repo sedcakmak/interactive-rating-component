@@ -1,29 +1,30 @@
+import { useContext } from "react";
 import styled from "styled-components";
 import Circle from "./Circle";
+import { ratingState } from "../App";
+
+export default function Rating() {
+  const { rating, setRating } = useContext(ratingState);
+
+  const circles = [];
+
+  for (let index = 0; index < 5; index++) {
+    circles.push(
+      <Circle
+        key={index + 1}
+        index={index}
+        shouldHover
+        onClick={() => setRating(index + 1)}
+        className={index + 1 === rating ? "active" : null}
+      />
+    );
+  }
+  return <Wrapper>{circles}</Wrapper>;
+}
 
 const Wrapper = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 3%;
+  justify-content: space-between;
 `;
-const Button = styled.button`
-  background-color: var(--orange);
-  width: 100%;
-  height: 60px;
-  color: var(--white);
-  text-transform: uppercase;
-`;
-export default function Rating() {
-  return (
-    <>
-      <Wrapper>
-        <Circle />
-        <Circle />
-        <Circle />
-        <Circle />
-        <Circle />
-      </Wrapper>
-      <Button> Submit </Button>
-    </>
-  );
-}
