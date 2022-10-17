@@ -23,7 +23,7 @@ Basic Rating Component built with React using React Hooks, Styled Components wit
 ### Links
 
 - Solution URL: (https://github.com/sedcakmak/interactive-rating-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://sedcakmak.github.io/interactive-rating-component/)
 
 ## My process
 
