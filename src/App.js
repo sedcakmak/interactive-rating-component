@@ -16,7 +16,7 @@ export default function App() {
       <ratingState.Provider value={{ rating, setRating }}>
         <Routes>
           <Route
-            path="/interactive-rating-component"
+            path="/"
             element={<MainDesign />}
           />
           <Route
